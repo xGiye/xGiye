@@ -13,6 +13,6 @@ const daysOfTheWeek = [
 
 setInterval(() => {
   let dateTime = new Date();
-  currentUTCTime.textContent = dateTime.getUTCMilliseconds();
+  currentUTCTime.textContent = dateTime.getTime();
   currentDayOfTheWeek.textContent = daysOfTheWeek[dateTime.getDay()];
 }, 1000);
